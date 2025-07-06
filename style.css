@@ -291,74 +291,24 @@
         width: 100%;
       }
 
-       .about-text {
-            max-width: 700px;
-            opacity: 0;
-            animation: slideInLeft 1s ease-out 0.5s forwards;
-        }
+      .about-text {
+        max-width: 880px;
+      }
 
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-50px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
+      .about-text h2 {
+        color: #00e6b7;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.33;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+      }
 
-        .about-text h2 {
-            background: linear-gradient(135deg, #00e6b7 0%, #6366f1 50%, #ec4899 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 1.2;
-            margin-bottom: 32px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .about-text h2::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(90deg, #00e6b7, #6366f1);
-            border-radius: 2px;
-            animation: expandLine 1s ease-out 1s forwards;
-            transform: scaleX(0);
-            transform-origin: left;
-        }
-
-        @keyframes expandLine {
-            to { transform: scaleX(1); }
-        }
-
-        .about-text p {
-            font-size: 18px;
-            line-height: 1.8;
-            font-weight: 400;
-            color: #e2e8f0;
-            text-align: justify;
-            opacity: 0;
-            animation: fadeInUp 1s ease-out 1.2s forwards;
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Highlight keywords */
-        .highlight {
-            background: linear-gradient(135deg, #00e6b7, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 600;
-            position: relative;
-        }
+      .about-text p {
+        font-size: 20px;
+        line-height: 1.44;
+        font-weight: 400;
+      }
 
       .about-image-wrapper {
         position: relative;
